@@ -5,25 +5,25 @@
 ## Screenshots
 
 ### 1. Login Screen
-![Login Screen](https://github.com/TheNawafTech/National-Licensing-Traffic-Operations-System-NLTOS-/blob/main/Images/Login%20(2).png?raw=true)
+![Login Screen](https://github.com/TheNawafTech/National-Licensing-Traffic-Operations-System-NLTOS-/blob/main/Login%20(2).png?raw=true)
 
 ### 2. Main Screen
-![Main Screen](https://github.com/TheNawafTech/National-Licensing-Traffic-Operations-System-NLTOS-/blob/main/Images/Main_Screen.png?raw=true)
+![Main Screen](https://github.com/TheNawafTech/National-Licensing-Traffic-Operations-System-NLTOS-/blob/main/Main_Screen.png?raw=true)
 
 ### 3. Driving Licenses Management
-![Driving Licenses](https://github.com/TheNawafTech/National-Licensing-Traffic-Operations-System-NLTOS-/blob/main/Images/Driving_Licenses.png?raw=true)
+![Driving Licenses](https://github.com/TheNawafTech/National-Licensing-Traffic-Operations-System-NLTOS-/blob/main/Driving_Licenses.png?raw=true)
 
 ### 4. Manage Applications
-![Manage Applications](https://github.com/TheNawafTech/National-Licensing-Traffic-Operations-System-NLTOS-/blob/main/Images/Manage_applications.png?raw=true)
+![Manage Applications](https://github.com/TheNawafTech/National-Licensing-Traffic-Operations-System-NLTOS-/blob/main/Manage_applications.png?raw=true)
 
 ### 5. Manage Local App
-![Manage Local App](https://github.com/TheNawafTech/National-Licensing-Traffic-Operations-System-NLTOS-/blob/main/Images/Manage_LocalApp.png?raw=true)
+![Manage Local App](https://github.com/TheNawafTech/National-Licensing-Traffic-Operations-System-NLTOS-/blob/main/Manage_LocalApp.png?raw=true)
 
 ### 6. New Local License
-![New Local License](https://github.com/TheNawafTech/National-Licensing-Traffic-Operations-System-NLTOS-/blob/main/Images/New_Local_License.png?raw=true)
+![New Local License](https://github.com/TheNawafTech/National-Licensing-Traffic-Operations-System-NLTOS-/blob/main/New_Local_License.png?raw=true)
 
 ### 7. Additional Details
-![Additional Details](https://github.com/TheNawafTech/National-Licensing-Traffic-Operations-System-NLTOS-/blob/main/Images/Additional_Details.png?raw=true)
+![Additional Details](https://github.com/TheNawafTech/National-Licensing-Traffic-Operations-System-NLTOS-/blob/main/Additional_Details.png?raw=true)
 
 ## Features
 - User-friendly interface with clean navigation
