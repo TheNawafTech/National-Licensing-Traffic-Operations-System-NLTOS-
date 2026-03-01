@@ -3,26 +3,27 @@
 **NLTOS** is a system for managing licenses and traffic operations using Windows Forms. It features a 3-layer architecture, built with C# and ADO.NET for database interaction. The system supports license management, renewals, replacements, and a user-friendly interface with clean architecture principles and business workflows.
 
 ## Screenshots
+
 ### 1. Login Screen
-![Login Screen](images/Login%20(2).png)
+![Login Screen](https://github.com/TheNawafTech/National-Licensing-Traffic-Operations-System-NLTOS-/blob/main/Images/Login%20(2).png?raw=true)
 
 ### 2. Main Screen
-![Main Screen](images/Main_Screen.png)
+![Main Screen](https://github.com/TheNawafTech/National-Licensing-Traffic-Operations-System-NLTOS-/blob/main/Images/Main_Screen.png?raw=true)
 
 ### 3. Driving Licenses Management
-![Driving Licenses](images/Driving_Licenses.png)
+![Driving Licenses](https://github.com/TheNawafTech/National-Licensing-Traffic-Operations-System-NLTOS-/blob/main/Images/Driving_Licenses.png?raw=true)
 
 ### 4. Manage Applications
-![Manage Applications](images/Manage_applications.png)
+![Manage Applications](https://github.com/TheNawafTech/National-Licensing-Traffic-Operations-System-NLTOS-/blob/main/Images/Manage_applications.png?raw=true)
 
 ### 5. Manage Local App
-![Manage Local App](images/Manage_LocalApp.png)
+![Manage Local App](https://github.com/TheNawafTech/National-Licensing-Traffic-Operations-System-NLTOS-/blob/main/Images/Manage_LocalApp.png?raw=true)
 
 ### 6. New Local License
-![New Local License](images/New_Local_License.png)
+![New Local License](https://github.com/TheNawafTech/National-Licensing-Traffic-Operations-System-NLTOS-/blob/main/Images/New_Local_License.png?raw=true)
 
 ### 7. Additional Details
-![Additional Details](images/Additional_Details.png)
+![Additional Details](https://github.com/TheNawafTech/National-Licensing-Traffic-Operations-System-NLTOS-/blob/main/Images/Additional_Details.png?raw=true)
 
 ## Features
 - User-friendly interface with clean navigation
@@ -30,7 +31,7 @@
 - Efficient license management system
 
 ## Issues & Troubleshooting
-Throughout the development, I encountered several challenges, such as database connection issues and UI responsiveness problems, which required careful debugging and optimization. 
+Throughout the development, I encountered several challenges, such as database connection issues and UI responsiveness problems, which required careful debugging and optimization.
 
 ## Conclusion
 This project is a complete solution for managing national licenses and traffic operations, designed to be scalable and adaptable for future updates.
