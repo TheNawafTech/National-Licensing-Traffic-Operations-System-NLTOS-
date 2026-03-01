@@ -2,7 +2,7 @@
 
 **NLTOS** is a system for managing licenses and traffic operations using Windows Forms. It features a 3-layer architecture, built with C# and ADO.NET for database interaction. The system supports license management, renewals, replacements, and a user-friendly interface with clean architecture principles and business workflows.
 
-## Screenshots
+## Some of the screenshots at the system
 
 ### 1. Login Screen
 ![Login Screen](https://github.com/TheNawafTech/National-Licensing-Traffic-Operations-System-NLTOS-/blob/main/Login%20(2).png?raw=true)
@@ -23,7 +23,7 @@
 ![New Local License](https://github.com/TheNawafTech/National-Licensing-Traffic-Operations-System-NLTOS-/blob/main/New_Local_License.png?raw=true)
 
 ### 7. Additional Details
-![Additional Details](https://github.com/TheNawafTech/National-Licensing-Traffic-Operations-System-NLTOS-/blob/main/Additional_Details.png?raw=true)
+![Additional Details](https://github.com/TheNawafTech/National-Licensing-Traffic-Operations-System-NLTOS-/blob/main/Addtional_Details.png?raw=true)
 
 ## Features
 - User-friendly interface with clean navigation
