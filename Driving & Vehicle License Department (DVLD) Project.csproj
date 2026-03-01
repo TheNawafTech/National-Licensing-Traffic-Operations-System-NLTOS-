@@ -1,0 +1,555 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="15.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{6E0131DD-1D70-4C29-B6A8-8D5C46C43426}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <RootNamespace>Driving___Vehicle_License_Department__DVLD__Project</RootNamespace>
+    <AssemblyName>Driving &amp; Vehicle License Department %28DVLD%29 Project</AssemblyName>
+    <TargetFrameworkVersion>v4.7.2</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <AutoGenerateBindingRedirects>true</AutoGenerateBindingRedirects>
+    <Deterministic>true</Deterministic>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="nClsLocalAppLicenseBusinessLayer, Version=1.0.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\nClsLocalAppLicenseBusinessLayer\bin\Debug\nClsLocalAppLicenseBusinessLayer.dll</HintPath>
+    </Reference>
+    <Reference Include="System" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Security" />
+    <Reference Include="System.Security.Cryptography.ProtectedData, Version=9.0.0.9, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a, processorArchitecture=MSIL">
+      <HintPath>packages\System.Security.Cryptography.ProtectedData.9.0.9\lib\net462\System.Security.Cryptography.ProtectedData.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Deployment" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Net.Http" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="frmDetainLicense.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmDetainLicense.Designer.cs">
+      <DependentUpon>frmDetainLicense.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmDrivers.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmDrivers.Designer.cs">
+      <DependentUpon>frmDrivers.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmInternationalLicenses.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmInternationalLicenses.Designer.cs">
+      <DependentUpon>frmInternationalLicenses.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FrmLoginScreen.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FrmLoginScreen.Designer.cs">
+      <DependentUpon>FrmLoginScreen.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmManageDetainedLicense.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmManageDetainedLicense.Designer.cs">
+      <DependentUpon>frmManageDetainedLicense.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmNewInternationalLicense.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmNewInternationalLicense.Designer.cs">
+      <DependentUpon>frmNewInternationalLicense.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmNotes.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmNotes.Designer.cs">
+      <DependentUpon>frmNotes.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmReleaseDetainedLicense.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmReleaseDetainedLicense.Designer.cs">
+      <DependentUpon>frmReleaseDetainedLicense.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmRenewLicenseApp.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmRenewLicenseApp.Designer.cs">
+      <DependentUpon>frmRenewLicenseApp.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmReplacementForDamgedLicense.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmReplacementForDamgedLicense.Designer.cs">
+      <DependentUpon>frmReplacementForDamgedLicense.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmUsers.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmUsers.Designer.cs">
+      <DependentUpon>frmUsers.cs</DependentUpon>
+    </Compile>
+    <Compile Include="MainScreen.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="MainScreen.Designer.cs">
+      <DependentUpon>MainScreen.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Program.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="SecureCredentialFile.cs" />
+    <EmbeddedResource Include="frmDetainLicense.resx">
+      <DependentUpon>frmDetainLicense.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmDrivers.resx">
+      <DependentUpon>frmDrivers.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmInternationalLicenses.resx">
+      <DependentUpon>frmInternationalLicenses.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FrmLoginScreen.resx">
+      <DependentUpon>FrmLoginScreen.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmManageDetainedLicense.resx">
+      <DependentUpon>frmManageDetainedLicense.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmNewInternationalLicense.resx">
+      <DependentUpon>frmNewInternationalLicense.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmNotes.resx">
+      <DependentUpon>frmNotes.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmReleaseDetainedLicense.resx">
+      <DependentUpon>frmReleaseDetainedLicense.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmRenewLicenseApp.resx">
+      <DependentUpon>frmRenewLicenseApp.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmReplacementForDamgedLicense.resx">
+      <DependentUpon>frmReplacementForDamgedLicense.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmUsers.resx">
+      <DependentUpon>frmUsers.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="MainScreen.resx">
+      <DependentUpon>MainScreen.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Properties\Resources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Resources.resx</DependentUpon>
+      <DesignTime>True</DesignTime>
+    </Compile>
+    <None Include="packages.config" />
+    <None Include="Properties\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <LastGenOutput>Settings.Designer.cs</LastGenOutput>
+    </None>
+    <Compile Include="Properties\Settings.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="App.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\ClsCurrentUser\ClsCurrentUser.csproj">
+      <Project>{ec391590-d8fd-4b37-b529-d3616830ea8f}</Project>
+      <Name>ClsCurrentUser</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\clsDetainLicenseBusinessLayer\clsDetainLicenseBusinessLayer.csproj">
+      <Project>{9d3f3ca0-e7e5-4162-8a64-85d3dd20220e}</Project>
+      <Name>clsDetainLicenseBusinessLayer</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\clsDVLDControls\clsDVLDControls.csproj">
+      <Project>{B5C10D61-42FE-4F45-9484-20A41A608E87}</Project>
+      <Name>clsDVLDControls</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\ClsInternationalLicenseBusinessLayer\ClsInternationalLicenseBusinessLayer.csproj">
+      <Project>{42e9006e-dae6-442d-9714-f0f31937b2da}</Project>
+      <Name>ClsInternationalLicenseBusinessLayer</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\ClsUser_B\ClsUser_B.csproj">
+      <Project>{7eb37c3c-1bfa-466c-997a-705463bea53f}</Project>
+      <Name>ClsUser_B</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\DriversBusinessLayer\DriversBusinessLayer.csproj">
+      <Project>{d518f8fe-4a4c-4634-87e6-0f3999531737}</Project>
+      <Name>DriversBusinessLayer</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\DVLDBusinessLayer\ClsPersonBusiness.csproj">
+      <Project>{57501bb2-d8fc-4eb8-a5c7-a392eb8fb19b}</Project>
+      <Name>ClsPersonBusiness</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\DVLD_Controls\DVLD_Controls.csproj">
+      <Project>{670307c2-bce8-4859-81dc-0163f7db8f80}</Project>
+      <Name>DVLD_Controls</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\FrmAddNewUser_\FrmAddNewUser_.csproj">
+      <Project>{0053c700-a812-4b44-b1c1-794fc06d14e6}</Project>
+      <Name>FrmAddNewUser_</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\frmApplicationTypes\frmApplicationTypes.csproj">
+      <Project>{ff92183d-6cee-4dfa-9621-73edf6e27da6}</Project>
+      <Name>frmApplicationTypes</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\frmChangePassword\frmChangePassword.csproj">
+      <Project>{da1a4c4d-f488-4ca0-95f3-a29fc8b9fc5a}</Project>
+      <Name>frmChangePassword</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\frmCurrentUser\frmCurrentUser.csproj">
+      <Project>{ce445a6d-c489-4b64-bd46-6c718b459131}</Project>
+      <Name>frmCurrentUser</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\frmManageTestTypes\frmManageTestTypes.csproj">
+      <Project>{7442b37f-4c19-42e8-b931-6b3250db05c1}</Project>
+      <Name>frmManageTestTypes</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\frmNewLocalLicense\frmNewLocalLicense.csproj">
+      <Project>{7985cb96-66b9-4619-a277-7f66a70dff6e}</Project>
+      <Name>frmNewLocalLicense</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\frmPeople\frmPeople.csproj">
+      <Project>{89f1eb5a-a9d5-4a50-a81d-2612b0d54baf}</Project>
+      <Name>frmPeople</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\frmShowInternationalLicenseInfo\frmShowInternationalLicenseInfo.csproj">
+      <Project>{c249c420-55d8-4133-8c7a-1a110556b7dc}</Project>
+      <Name>frmShowInternationalLicenseInfo</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\frmShowPersonDetails\frmShowPersonDetails.csproj">
+      <Project>{8ca8b2d6-fc89-4ffe-ad55-77fa83460ac3}</Project>
+      <Name>frmShowPersonDetails</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\LocalDrivingLicenseList\LocalDrivingLicenseList.csproj">
+      <Project>{0d0e274f-e8d0-4426-9974-8a19b74e36c3}</Project>
+      <Name>LocalDrivingLicenseList</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\nClsLicenesDataLayer\nClsLicenesDataLayer.csproj">
+      <Project>{830fa0b6-2bc7-401d-9b8f-f0aa5ba45c2e}</Project>
+      <Name>nClsLicenesDataLayer</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\nClsLicenseBusinessLayer\nClsLicenseBusinessLayer.csproj">
+      <Project>{ad81fc10-32ce-4689-805c-3dadac8c82d6}</Project>
+      <Name>nClsLicenseBusinessLayer</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\Operations_\Operations_.csproj">
+      <Project>{c9aa2c57-db51-49a9-beb9-a0b98baf5718}</Project>
+      <Name>Operations_</Name>
+    </ProjectReference>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\people st.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\App  St.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\acc settings st.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Drivers St.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Users Stt.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\1 acc.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\app 82.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\app 55.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Drivers 55.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\users 55.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\us 55.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\people 55.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\settings 55.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\app 50.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\DVLD Background_0.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\BAC.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Manage Users Photo.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\close sq.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Login Backgound.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Bacp.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Current User.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\CURRENT_USER.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\U1.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\St1A.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\ChangePassword.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\SignOut.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Sign.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Screenshot 2025-10-04 234441.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Screenshot 2025-10-05 000739.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Screenshot 2025-10-05 001146.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Screenshot 2025-10-05 001226.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Screenshot 2025-10-05 001345.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Screenshot 2025-10-05 001407.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Screenshot 2025-10-05 001531.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Screenshot 2025-10-05 001741.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Screenshot 2025-10-05 001838.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Screenshot 2025-10-14 220634.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Screenshot 2025-10-14 222727.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Here___.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Driving_Here.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Here_Mange.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\هنا 2.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\هنا2.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Detain Icon.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Detain2.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Detin3.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\MangaeTest.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\ManageTest2.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\ManageApp3.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Screenshot 2025-10-16 110356.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\local 2.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\International 32.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\International.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\International 70.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\New Driving License 32.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Renew Driving License 32.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Lost Driving License 32.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Damaged Driving License 32.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Retake Test 32.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\account_settings 64.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\LocalDriving License.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\International 321.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\New Driving License 65.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\New local dr 50.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\LocalDriving License1.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Local Driving License 60.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Local Driving License 45.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\International 55.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Local 55.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\DriverMain.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\IssueDrivingLicense 32.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\close sq1.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Close 32.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\International 322.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Applications.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\New Application 64.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\License View 32.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Natoinal SQ.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\date Sq.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\money 32 - 2.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\money 32.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Notes 32.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Date32.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Release Detained License 64.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Detain 512.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\NLTOS___.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Login_Photo.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Login_Photo1.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Login_Photo_02.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Login_Photo_021.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\login_03_Transp.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\شعار NLTOS.png" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+</Project>
